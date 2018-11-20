@@ -1,4 +1,4 @@
-UdonError = Class.new(StandardError)
+Udon::UdonError = Class.new(StandardError)
 module Udon
   class UdonService
     def initialize(hate: nil)
