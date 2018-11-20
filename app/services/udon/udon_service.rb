@@ -1,6 +1,6 @@
 module Udon
-  UdonError = Class.new(StandardError)
   class UdonService
+    UdonError = Class.new(StandardError)
     def initialize(hate: nil)
       @name = "Udon_#{Time.now.to_i}"
       @hate = hate

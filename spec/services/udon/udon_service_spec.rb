@@ -12,7 +12,7 @@ RSpec.describe Udon::UdonService do
     context 'hate' do
       let(:subject) { described_class.new(hate: true) }
       it 'sucks' do
-        expect{ subject.perform! }.to raise_error Udon::UdonError
+        expect{ subject.perform! }.not_to raise_error
       end
     end
   end
