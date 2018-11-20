@@ -1,3 +1,4 @@
+UdonError = Class.new(StandardError)
 module Udon
   class UdonService
     def initialize(hate: nil)
@@ -6,7 +7,7 @@ module Udon
     end
 
     def perform!
-      fail StandardError if @hate
+      fail UdonError if @hate
       puts "perform"
       "I hate #{@name}"
     end
